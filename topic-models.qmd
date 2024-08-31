@@ -1,0 +1,15 @@
+# Testing
+
+```{python}
+from bertopic import BERTopic
+from sklearn.datasets import fetch_20newsgroups
+```
+
+```{python}
+docs = fetch_20newsgroups(subset='all',  remove=('headers', 'footers', 'quotes'))['data']
+```
+
+```{python}
+topic_model = BERTopic()
+topics, probs = topic_model.fit_transform(docs)
+```
