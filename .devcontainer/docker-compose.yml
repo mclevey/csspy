@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  module-3-analyzing-text-data:
+    # text analysis with generative language models
+    build: ../module-3-analyzing-text-data
+    volumes:
+      - ..:/workspace:cached
+    ports:
+      - 8000:8000
+    environment:
+      - SOME_ENV_VARIABLE=your_value
+  module-4-generative-network-modelling:
+    # modelling networks with graph-tool
+    build: ../module-4-generative-network-modelling
+    volumes:
+      - ..:/workspace:cached
+    ports:
+      - 8888:8888
+      - 6006:6006
+    environment:
+      - DISPLAY=${DISPLAY}
+    ipc: host
+  module-5-agent-based-modelling:
+    # abms
+    build: ../module-5-agent-based-modelling
+    volumes:
+      - ..:/workspace:cached
+    ports:
+      - 9000:9000
+    environment:
+      - ANOTHER_ENV_VARIABLE=another_value

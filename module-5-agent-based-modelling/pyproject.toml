@@ -8,8 +8,12 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 ipykernel = "^6.0"
+mesa = "^2.3.1"
+nbclient = "^0.10.0"
+networkx = "^3.3"
 pandas = "^2.2.2"
-bertopic = { version = "^0.16.2", extras = ["spacy"] }
+pdpp = "^0.5.1"
+
 
 
 [build-system]

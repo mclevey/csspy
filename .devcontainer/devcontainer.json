@@ -1,0 +1,27 @@
+{
+	"name": "Computational Social Science Class",
+	"dockerComposeFile": [
+		"docker-compose.yml"
+	],
+	"service": "module-4-generative-network-modelling",
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-azuretools.vscode-docker",
+				"ms-toolsai.jupyter"
+			],
+			"settings": {
+				"python.pythonPath": "/usr/bin/python3",
+				"terminal.integrated.shell.linux": "/bin/bash"
+			}
+		}
+	},
+	"forwardPorts": [
+		8888,
+		6006
+	],
+	"remoteUser": "user",
+	"postCreateCommand": "pip install -r requirements.txt"
+}

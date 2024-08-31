@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "csspy"
+version = "0.1.0"
+description = ""
+authors = ["John McLevey <john.mclevey@hey.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+ipykernel = "^6.0"
+bertopic = { version = "^0.16.2", extras = ["spacy"] }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
